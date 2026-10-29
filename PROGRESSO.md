@@ -2,7 +2,7 @@
 
 **Atualizado:** 28/10/2026 · **Último marco concluído:** Fase 7 — segurança e backup
 
-**Publicação em andamento, autorizada explicitamente pelo usuário após a entrega local.** Destino: `PedroVtBarros/o-ceu-e-o-limite`, público; versão v1.0.0 como pré-lançamento. Binários e testes locais permanecem os mesmos. Windows limpo, DPI do sistema e atualização entre versões continuam pendentes; o envio remoto será registrado após verificação.
+**Pré-lançamento v1.0.0 publicado, com autorização explícita do usuário.** [Repositório público](https://github.com/PedroVtBarros/o-ceu-e-o-limite) e [oito anexos do Release](https://github.com/PedroVtBarros/o-ceu-e-o-limite/releases/tag/v1.0.0) disponíveis. Todos os SHA-256 remotos coincidem com os arquivos locais. Windows limpo, DPI do sistema e atualização entre versões continuam pendentes; o workflow fica como modelo por falta de escopo OAuth `workflow`.
 
 ## Situação do projeto
 
@@ -18,7 +18,7 @@ As Fases 0 a 7 estão concluídas. O desktop reúne metas, checklist, descanso, 
 | 5 — Rotinas | Concluída | Fontes, personalização, experiências, idempotência e migração com backup comprovadas |
 | 6 — Motivação | Concluída | Marcos derivados, objetivos independentes, preferências, foco e migração comprovados |
 | 7 — Backup | Concluída | Exportação, restauração/retorno, cancelamentos, falhas, limites e guia comprovados |
-| 8 — Lançamento | Artefatos e testes locais prontos | Windows limpo, DPI do sistema, atualização entre versões e publicação pendentes |
+| 8 — Lançamento | Pré-lançamento público | Windows limpo, DPI do sistema e atualização entre versões pendentes |
 
 ## Entrega da Fase 1
 
@@ -275,10 +275,10 @@ Os diálogos desta suíte são reais e controlados por Win32, identificados pelo
 ### Aceite externo ainda pendente
 
 1. Este Windows não disponibiliza Windows Sandbox/VM limpa. Não foi comprovado o uso em Windows sem ferramentas instaladas, nem os caminhos padrão de dados em tal ambiente.
-2. Reinstalação da mesma versão foi comprovada; atualização entre versões publicadas distintas ainda precisa ser testada. `1.0.0` é a primeira candidata local de distribuição.
+2. Reinstalação da mesma versão foi comprovada; atualização entre versões publicadas distintas ainda precisa ser testada. `1.0.0` é o primeiro pré-lançamento.
 3. Escala do renderer 125%/150% passou. DPI do sistema e aparência/comportamento dos diálogos em Windows limpo permanecem no roteiro externo.
 4. Assinatura de editor não foi adicionada; avisos reais de download/SmartScreen não foram caracterizados em máquina limpa.
-5. Não houve execução remota do workflow, repositório GitHub indicado ou publicação de Release. A intenção original é disponibilizar os arquivos para o usuário publicar; não foi inferida autorização para escolher um repositório ou publicar por ele.
+5. O workflow não foi executado remotamente. Posteriormente à entrega local, o usuário pediu explicitamente publicar em seu GitHub. Repositório e pré-lançamento foram publicados na conta autenticada, conforme o registro seguinte.
 
 A Fase 8 não está marcada como integralmente aceita. Os executáveis, material e testes locais estão entregues, e o [roteiro de aceite](docs/LANCAMENTO.md) permite concluir as provas restantes. [Portátil em execução](docs/preview-fase-8.png) · [Restauração no instalado](docs/restauracao-fase-8.png) · [Renderer 125%](docs/escala-125-fase-8.png) · [Renderer 150%](docs/escala-150-fase-8.png). Capturas com dados fictícios.
 
@@ -290,12 +290,12 @@ A Fase 8 não está marcada como integralmente aceita. Os executáveis, material
 4. A prévia do navegador usa IndexedDB experimental e não oferece as garantias de histórico/migração do SQLite desktop.
 5. O v1 não registrava versões anteriores de título/categoria nem instantes de conclusão. A migração preserva o que existe e não inventa esses fatos.
 6. Backup é local, sem criptografia, nuvem ou retenção automática. Limite de 50 MB; perda física do disco exige cópia em outro dispositivo. Diálogos reais foram exercitados localmente na Fase 8, sem equivaler a aceite de Windows limpo.
-7. Portátil e instalador 1.0.0 foram gerados sem assinatura de editor, com hashes e notas. Nenhum Release foi publicado ou workflow remoto executado.
+7. Portátil e instalador 1.0.0 foram publicados como pré-lançamento, sem assinatura de editor, com hashes e notas. Automação de build remota não está ativa; modelo disponível.
 8. Windows limpo, atualização entre versões publicadas e DPI do sistema continuam pendentes; fatores de renderer 125%/150% foram comprovados no pacote local.
 
 ## Próxima verificação
 
-Concluir o aceite externo da Fase 8 pelo roteiro de Windows limpo e revisar os anexos de distribuição. Quando houver repositório e autorização de publicação, usar os oito anexos da mesma compilação e as notas/hashes gerados. Não publicar como se os critérios externos já tivessem sido aprovados.
+Concluir o aceite externo da Fase 8 pelo roteiro de Windows limpo antes de promover uma versão estável. Preservar os anexos/hashes do pré-lançamento publicado. Para ativar CI, usar o modelo com uma sessão que permita enviar workflows; não presumir que isso já ocorreu.
 
 Nenhuma fase adicional ou funcionalidade fora desse escopo foi iniciada.
 
@@ -313,5 +313,15 @@ Nenhuma fase adicional ou funcionalidade fora desse escopo foi iniciada.
 | 28/10/2026 | Fase 6 | Meu caminho, marcos/níveis derivados, objetivos independentes, temas e SQLite v4; 94 testes, build e dez fluxos Electron aprovados |
 | 28/10/2026 | Fase 7 | Backup atômico, validação antes da confirmação, cópia anterior independente e guia de recuperação; 106 testes, build e 13 fluxos Electron aprovados |
 | 28/10/2026 | Fase 8 — entrega local | Portátil/NSIS 1.0.0, hashes, licenças, notas e guia; 106 testes, 13 fluxos anteriores e três dos executáveis aprovados; aceite externo/publicação pendentes |
+| 28/10/2026 | Publicação GitHub | Código público e pré-lançamento v1.0.0 com oito anexos, hashes remotos iguais e downloads anônimos 200; CI como modelo, aceite externo pendente |
 
-Não existe repositório Git inicializado nesta pasta; nenhum commit ou push foi criado. Nenhuma publicação externa foi realizada.
+## Publicação GitHub — solicitação posterior do usuário
+
+- Conta autenticada: `PedroVtBarros`. Criado repositório público `PedroVtBarros/o-ceu-e-o-limite`, com código, documentação, licença e capturas de dados fictícios. Bancos, caches, credenciais e executáveis ficam fora do histórico Git. Autoria usa o endereço noreply público, sem e-mail pessoal.
+- Tag `v1.0.0` vinculada ao commit `505e56ca8debd0a2633c4c28f1d2266052b44222`. Os executáveis são os mesmos testados na entrega local; nenhuma recompilação ou alteração de dados ocorreu na publicação.
+- Release ID `427374505`, público, `draft=false`, `prerelease=true`. Publicado com os oito anexos revisados; tamanho e SHA-256 de cada um conferidos com os digests calculados pelo GitHub.
+- Repositório, página da versão e ambos os downloads responderam HTTP 200 em consultas sem autenticação; tamanhos públicos dos executáveis correspondem aos originais.
+- A sessão OAuth tem escopo de repositório/Releases, mas não `workflow`. O GitHub recusou o envio inicial do arquivo ativo. O commit ainda não publicado foi corrigido, sem reescrever histórico remoto: o conteúdo integral foi publicado em `docs/github-actions/release.yml.example`; o arquivo ativo permanece local e está excluído apenas por `.git/info/exclude`.
+- CI não foi ativada nem executada. A publicação manual de código e Release foi concluída com as permissões existentes. As pendências de Windows limpo e atualização permanecem declaradas nas notas e neste documento; a Fase 8 não foi promovida a aceite integral.
+
+[Repositório](https://github.com/PedroVtBarros/o-ceu-e-o-limite) · [Pré-lançamento 1.0.0](https://github.com/PedroVtBarros/o-ceu-e-o-limite/releases/tag/v1.0.0).

@@ -11,7 +11,7 @@ Aplicativo desktop pessoal, em português brasileiro, TypeScript, offline e com 
 
 ## Situação inicial
 
-Fases 0 a 7 concluídas; Fase 8 entregou portátil e instalador 1.0.0 x64, hashes, notas e testes locais. SQLite continua v4, nove tabelas e checksums preservados. Verificação: build, 106 testes Vitest, 13 fluxos Electron e três fluxos dos executáveis aprovados. Dependências/lockfile inalterados. Pendentes: Windows limpo sem ferramentas, escala física do sistema, atualização entre versões publicadas e publicação no repositório indicado. Não declarar Fase 8 integralmente aceita nem Release publicado enquanto essas provas não ocorrerem. Estado detalhado em PROGRESSO.md.
+Fases 0 a 7 concluídas; portátil e instalador 1.0.0 x64 publicados como pré-lançamento em `PedroVtBarros/o-ceu-e-o-limite`, com oito anexos e hashes remotos conferidos. SQLite continua v4, nove tabelas e checksums preservados. Verificação: build, 106 testes Vitest, 13 fluxos Electron e três dos executáveis aprovados. Dependências/lockfile inalterados. Pendentes: Windows limpo sem ferramentas, escala física do sistema e atualização entre versões publicadas. Não declarar Fase 8 integralmente aceita enquanto essas provas não ocorrerem. Publicação foi autorizada e confirmada; CI permanece como modelo, sem ativação. Estado detalhado em PROGRESSO.md.
 
 ## Regras que devem permanecer verdadeiras
 
@@ -50,7 +50,7 @@ Fase 8: `npm.cmd run dist:win` compila/coleta licenças, gera os dois formatos s
 
 ## Comandos atuais
 
-Publicação autorizada posteriormente pelo usuário: destino `PedroVtBarros/o-ceu-e-o-limite`, público, v1.0.0 como pré-lançamento. A sessão OAuth não possui escopo `workflow`; o GitHub recusou o envio do arquivo ativo. O conteúdo integral fica versionado em `docs/github-actions/release.yml.example`. O arquivo `.github/workflows/release.yml` local foi preservado e excluído só por `.git/info/exclude`. No repositório remoto não há Actions ativo; as descrições anteriores do workflow explicam o modelo, condicionado à sua ativação por uma conta autorizada. Não pedir nova autenticação apenas para publicar código/Releases, que a sessão já permite. Consultar PROGRESSO.md para a verificação final da publicação.
+Publicação concluída a pedido explícito do usuário: repositório público `PedroVtBarros/o-ceu-e-o-limite`, tag v1.0.0 e Release público marcado como pré-lançamento. Oito anexos têm tamanhos e SHA-256 remotos iguais aos locais, e downloads anônimos responderam 200. A sessão OAuth não possui escopo `workflow`; o GitHub recusou o envio do arquivo ativo. O conteúdo integral fica versionado em `docs/github-actions/release.yml.example`. O arquivo `.github/workflows/release.yml` local foi preservado e excluído só por `.git/info/exclude`. No remoto não há Actions ativo; descrições anteriores explicam o modelo, condicionado à ativação por uma conta autorizada. Não pedir nova autenticação apenas para código/Releases, que a sessão já permite. Não alterar tag ou anexos publicados sem um pedido correspondente.
 
 ```powershell
 npm.cmd ci

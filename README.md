@@ -6,7 +6,7 @@ Aplicativo desktop pessoal para Windows, em TypeScript, para registrar metas di�
 
 ## Estado atual
 
-**Versão 1.0.0 — pré-lançamento.** Metas, análises, rotinas, Meu caminho e backups funcionam offline com SQLite v4. Os executáveis passaram nos testes locais; o aceite em Windows limpo e atualização entre versões ainda estão pendentes. Publicação autorizada pelo proprietário, em preparação no repositório [PedroVtBarros/o-ceu-e-o-limite](https://github.com/PedroVtBarros/o-ceu-e-o-limite).
+**Versão 1.0.0 — pré-lançamento publicado.** Metas, análises, rotinas, Meu caminho e backups funcionam offline com SQLite v4. Os executáveis passaram nos testes locais; o aceite em Windows limpo e atualização entre versões ainda estão pendentes. Código e downloads públicos em [PedroVtBarros/o-ceu-e-o-limite](https://github.com/PedroVtBarros/o-ceu-e-o-limite).
 
 A interface oferece três temas escuros: Violeta, Oceano e Floresta. Fontes, ícones e imagens necessários ao aplicativo estão no pacote local.
 
@@ -34,7 +34,7 @@ No [pré-lançamento 1.0.0](https://github.com/PedroVtBarros/o-ceu-e-o-limite/re
 - [Portátil para Windows x64](https://github.com/PedroVtBarros/o-ceu-e-o-limite/releases/download/v1.0.0/O-Ceu-e-o-Limite-1.0.0-Windows-x64-Portatil.exe): abrir diretamente, sem instalar.
 - [Instalador para Windows x64](https://github.com/PedroVtBarros/o-ceu-e-o-limite/releases/download/v1.0.0/O-Ceu-e-o-Limite-1.0.0-Windows-x64-Instalador.exe): instalar para seu usuário e abrir pelo atalho.
 
-Ambos incluem o runtime e os recursos locais. Feche o app antes de trocar de formato ou atualizar; o banco fica na pasta do usuário, fora da instalação. A compilação está **sem assinatura digital de editor**. Confira a origem e `release/SHA256SUMS.txt`; o Windows pode exibir avisos. Consulte o [guia de lançamento](docs/LANCAMENTO.md) para distribuição e verificação.
+Ambos incluem o runtime e os recursos locais. Feche o app antes de trocar de formato ou atualizar; o banco fica na pasta do usuário, fora da instalação. A compilação está **sem assinatura digital de editor**. Confira a origem e o [SHA256SUMS.txt](https://github.com/PedroVtBarros/o-ceu-e-o-limite/releases/download/v1.0.0/SHA256SUMS.txt); o Windows pode exibir avisos. Consulte o [guia de lançamento](docs/LANCAMENTO.md) para distribuição e verificação.
 
 ## Metas e programação
 
