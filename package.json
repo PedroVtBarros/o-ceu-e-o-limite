@@ -1,0 +1,104 @@
+{
+  "name": "o-ceu-e-o-limite",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Seu espaço pessoal para transformar pequenas metas em grandes conquistas.",
+  "author": "O céu é o limite",
+  "license": "MIT",
+  "main": "dist-electron/main.cjs",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "dev:web": "vite --host 127.0.0.1",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "build": "npm run typecheck && vite build && node scripts/build-electron.mjs",
+    "start": "node scripts/start.mjs",
+    "dist:win": "npm run build && node scripts/prepare-licenses.mjs && electron-builder --win portable nsis --x64 --publish never && node scripts/prepare-release.mjs",
+    "test:release": "playwright test --config playwright.release.config.ts",
+    "postinstall": "node node_modules/electron/install.js"
+  },
+  "dependencies": {
+    "@fontsource-variable/manrope": "5.3.0",
+    "lucide-react": "1.62.0",
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "recharts": "3.10.1",
+    "sql.js": "1.15.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.1",
+    "@tailwindcss/vite": "4.3.3",
+    "@types/node": "26.6.5",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@types/sql.js": "1.4.11",
+    "@vitejs/plugin-react": "6.1.2",
+    "electron": "45.1.0",
+    "electron-builder": "26.18.0",
+    "esbuild": "0.28.2",
+    "tailwindcss": "4.3.3",
+    "typescript": "7.0.2",
+    "vite": "8.3.5",
+    "vitest": "5.0.5"
+  },
+  "build": {
+    "appId": "br.app.oceueolimite",
+    "productName": "O céu é o limite",
+    "directories": {
+      "output": "release",
+      "buildResources": "build"
+    },
+    "files": [
+      "dist/**/*",
+      "dist-electron/**/*",
+      "package.json"
+    ],
+    "extraResources": [
+      {
+        "from": "node_modules/sql.js/dist/sql-wasm.wasm",
+        "to": "sql-wasm.wasm"
+      },
+      {
+        "from": "docs/RECUPERACAO.md",
+        "to": "RECUPERACAO.md"
+      },
+      {
+        "from": "build/THIRD_PARTY_NOTICES.txt",
+        "to": "THIRD_PARTY_NOTICES.txt"
+      }
+    ],
+    "win": {
+      "target": [
+        "portable",
+        "nsis"
+      ],
+      "executableName": "O-Ceu-e-o-Limite",
+      "icon": "build/icon.ico",
+      "signAndEditExecutable": true
+    },
+    "portable": {
+      "artifactName": "O-Ceu-e-o-Limite-${version}-Windows-x64-Portatil.exe",
+      "requestExecutionLevel": "user"
+    },
+    "nsis": {
+      "artifactName": "O-Ceu-e-o-Limite-${version}-Windows-x64-Instalador.exe",
+      "oneClick": true,
+      "perMachine": false,
+      "deleteAppDataOnUninstall": false,
+      "runAfterFinish": false,
+      "packElevateHelper": false,
+      "installerLanguages": [
+        "pt_BR"
+      ],
+      "language": 1046,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "O Céu é o Limite"
+    }
+  },
+  "engines": {
+    "node": ">=24.0.0"
+  }
+}

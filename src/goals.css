@@ -1,0 +1,237 @@
+.goal-fields {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+.goal-fields > label,
+.goal-fields .field-label {
+  display: block;
+  margin-top: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #d1d9eb;
+}
+.goal-fields > label:first-child {
+  margin-top: 0;
+}
+.goal-fields input,
+.goal-fields textarea {
+  display: block;
+  width: 100%;
+  margin-top: 9px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.goal-fields input[type="date"] {
+  min-height: 47px;
+}
+.days-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin: 20px 0 10px;
+}
+.days-heading .field-label {
+  margin-top: 0;
+}
+.days-heading > div {
+  display: flex;
+  gap: 10px;
+}
+.days-heading > div > button {
+  border: 0;
+  background: none;
+  color: #b8a9f3;
+  font-size: 10px;
+  padding: 5px 0;
+}
+.weekday-options {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 7px;
+}
+.weekday-options > button {
+  min-height: 40px;
+  border: 1px solid #45526c;
+  color: #b7c3d9;
+  background: #222f47;
+  border-radius: 8px;
+  font-size: 12px;
+  padding: 6px 0;
+}
+.weekday-options > button.selected {
+  background: #7c6bff27;
+  border-color: #a593ff;
+  color: #e6dfff;
+}
+.weekday-options > button:hover {
+  border-color: #a593ff;
+}
+.form-error {
+  color: #ffb4c4;
+  font-size: 12px;
+  line-height: 1.8;
+  margin-top: 14px;
+  padding: 10px 12px;
+  background: #f18e9c10;
+  border: 1px solid #f18e9c26;
+  border-radius: 8px;
+}
+.goal-management-toolbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  flex-wrap: wrap;
+  margin: 24px 0;
+  align-items: center;
+}
+.goal-search-controls {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.goal-search-controls select {
+  border: 1px solid #52617b;
+  background: #26334d;
+  color: #dbe3f1;
+  border-radius: 9px;
+  padding: 10px 12px;
+  font: inherit;
+  font-size: 12px;
+  outline-offset: 3px;
+}
+.goal-search-controls .search-input {
+  width: 200px;
+  font-size: 12px;
+}
+.goal-schedule {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding-bottom: 18px;
+  margin-top: -7px;
+}
+.goal-schedule strong {
+  color: #c9bef4;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.8;
+}
+.goal-schedule > span {
+  color: #a4b4ce;
+  font-size: 11px;
+  line-height: 1.8;
+}
+.managed-footer > button {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  min-height: 30px;
+}
+.managed-footer > button:disabled {
+  cursor: default;
+}
+.goal-management-actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 12px;
+}
+.goal-management-actions > button {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: none;
+  border: 0;
+  padding: 6px 0;
+  color: #aebbd3;
+  font-size: 12px;
+  min-height: 32px;
+}
+.goal-management-actions > button.delete-goal-button {
+  color: #f3a6b2;
+}
+.preserved-history {
+  color: #99aca9;
+  font-size: 10px;
+}
+.button.danger {
+  color: #fff;
+  background: #a34062;
+  border-color: #c96587;
+}
+.button.danger:hover:not(:disabled) {
+  background: #b94d70;
+}
+.goal-version-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 18px;
+}
+.goal-version {
+  border: 1px solid #ffffff13;
+  border-radius: 10px;
+  padding: 17px;
+  background: #202e45;
+}
+.goal-version > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.goal-version > div > strong {
+  color: #ac9ded;
+  font-size: 11px;
+  font-weight: 500;
+}
+.goal-version h3 {
+  font-size: 15px;
+  overflow-wrap: anywhere;
+  color: #f3efff;
+  line-height: 1.7;
+}
+.goal-version p {
+  color: #adbcd4;
+  font-size: 12px;
+  margin-top: 7px;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+.planned-note {
+  color: #c4b1f9;
+  background: #7c6bff12;
+  margin: 10px 18px;
+  border-radius: 8px;
+}
+.planned-progress h2 {
+  margin: 12px 0 9px;
+}
+.planned-progress p {
+  color: #b6c1d5;
+  font-size: 13px;
+  line-height: 1.8;
+}
+@media (max-width: 760px) {
+  .goal-search-controls {
+    width: 100%;
+  }
+  .goal-search-controls select,
+  .goal-search-controls .search-input {
+    flex: 1;
+    min-width: 130px;
+  }
+  .managed-goals {
+    grid-template-columns: 1fr;
+  }
+  .goal-fields .category-options {
+    flex-wrap: wrap;
+  }
+}

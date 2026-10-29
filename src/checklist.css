@@ -1,0 +1,339 @@
+.modal {
+  margin: auto;
+}
+.day-progress > .eyebrow {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  line-height: 1.8;
+}
+.day-progress > .eyebrow > span:last-child {
+  font-size: 11px;
+  letter-spacing: 0;
+  font-weight: 400;
+  color: #b6c1d5;
+}
+.day-progress .progress-explanation {
+  font-size: 13px;
+  line-height: 1.9;
+  color: #b6c1d5;
+}
+.daily-week-summary {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 8px 16px;
+  margin-top: 19px;
+  border-top: 1px solid #ffffff0d;
+  padding-top: 15px;
+  font-size: 11px;
+  line-height: 1.8;
+  color: #aabbd0;
+}
+.daily-week-summary strong {
+  color: #c9baff;
+  font-weight: 500;
+}
+.daily-week-summary small {
+  display: block;
+  flex-basis: 100%;
+  font-size: 10px;
+  color: #9babbe;
+}
+.weekly-progress {
+  margin: 18px 22px 8px;
+  padding: 16px;
+  background: #7c6bff12;
+  border: 1px solid #b9a2ff20;
+  border-radius: 9px;
+}
+.weekly-progress > div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  flex-wrap: wrap;
+  font-size: 13px;
+  margin-bottom: 13px;
+}
+.weekly-progress > div > strong {
+  font-weight: 500;
+  color: #dfd6ff;
+}
+.weekly-progress > div > span {
+  color: #a5b3cc;
+  font-size: 10px;
+}
+.weekly-progress > div > b {
+  margin-left: auto;
+  font-size: 21px;
+  font-weight: 500;
+  color: #bcaeff;
+}
+.weekly-progress p {
+  font-size: 12px;
+  margin-top: 12px;
+  color: #c3cadc;
+  line-height: 1.8;
+}
+.weekly-progress > small {
+  display: block;
+  font-size: 10px;
+  color: #a7b4cc;
+  line-height: 1.9;
+  margin-top: 6px;
+}
+.agenda-controls {
+  padding: 7px 21px 9px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.agenda-controls label {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  color: #aabbd1;
+  font-size: 11px;
+}
+.agenda-controls input {
+  padding: 7px 8px;
+  font-size: 11px;
+  width: 140px;
+  background: #233049;
+  border-color: #46516b;
+}
+.agenda-controls > button {
+  color: #c4b4ff;
+  font-size: 11px;
+  border: 0;
+  background: none;
+  padding: 6px 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+}
+.calendar-key {
+  padding: 6px 22px 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  color: #9cadc5;
+  font-size: 11px;
+}
+.calendar-key > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+.calendar-key i,
+.day-button .calendar-marker {
+  display: block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+}
+.calendar-marker.complete,
+.calendar-key .complete {
+  background: #35d697;
+}
+.calendar-marker.partial {
+  background: #a996ff;
+}
+.calendar-marker.missed {
+  background: #ef9dab;
+}
+.calendar-marker.unrecorded,
+.calendar-key .unrecorded {
+  background: #f0bf78;
+}
+.calendar-marker.rest,
+.calendar-key .rest {
+  background: #83bfcc;
+  border-radius: 1px;
+  transform: rotate(45deg);
+}
+.calendar-marker.future,
+.calendar-key .future {
+  border: 1px solid #a8b7cf;
+  background: none;
+}
+.calendar-marker.pending {
+  background: #8294b0;
+}
+.calendar-marker.empty {
+  background: #526078;
+}
+.day-button {
+  min-height: 69px;
+}
+.checklist-row {
+  align-items: center;
+}
+.goal-copy > .outcome-label {
+  font-size: 12px;
+  display: inline-block;
+  line-height: 1.8;
+  margin-top: 5px;
+  color: #b5c0d4;
+}
+.goal-copy > .outcome-label.done {
+  color: #62d6a8;
+}
+.goal-copy > .outcome-label.missed {
+  color: #f2a4b3;
+}
+.result-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+  justify-content: flex-end;
+}
+.result-history-button {
+  width: 29px;
+  height: 29px;
+  color: #aaa0c9;
+}
+.checklist-help {
+  color: #9eafc6;
+  font-size: 11px;
+  line-height: 1.9;
+  padding: 8px 22px 15px;
+}
+.rest-day-banner {
+  margin: 17px 22px;
+  padding: 27px 20px;
+  text-align: center;
+  border-radius: 10px;
+  background: #74bac00d;
+  border: 1px solid #74bac01e;
+  color: #94c9d2;
+}
+.rest-day-banner h3 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #d0e8ec;
+  margin-top: 12px;
+}
+.rest-day-banner p {
+  color: #b9d2d8;
+  font-size: 13px;
+  margin-top: 10px;
+  line-height: 1.9;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.rest-day-banner span,
+.rest-day-banner small {
+  display: block;
+  color: #9dbfc6;
+  font-size: 11px;
+  line-height: 1.9;
+  margin-top: 12px;
+}
+.rest-day-banner small {
+  font-size: 10px;
+}
+.rest-preview {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 16px;
+  background: #74bac012;
+  border: 1px solid #74bac028;
+  border-radius: 9px;
+  color: #8cc3cb;
+  margin-top: 20px;
+}
+.rest-preview > svg {
+  flex-shrink: 0;
+  margin-top: 4px;
+}
+.rest-preview p {
+  color: #b3ccd6;
+  font-size: 12px;
+  line-height: 1.9;
+}
+.correction-context {
+  display: flex;
+  justify-content: space-between;
+  gap: 17px;
+  background: #7c6bff15;
+  border-radius: 9px;
+  padding: 16px;
+  margin-bottom: 17px;
+  font-size: 12px;
+  color: #b7c3d8;
+}
+.correction-context strong {
+  color: #d3c5ff;
+  font-weight: 500;
+}
+.correction-options {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 20px;
+}
+.correction-options button {
+  border: 1px solid #4a5570;
+  border-radius: 8px;
+  color: #c5d1e5;
+  background: #24314a;
+  font-size: 12px;
+  padding: 12px 4px;
+}
+.correction-options button.selected {
+  color: #e0d7ff;
+  border-color: #ac94ff;
+  background: #7c6bff28;
+}
+.outcome-events {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.outcome-events li {
+  background: #202d44;
+  padding: 17px;
+  border: 1px solid #ffffff0c;
+  border-radius: 9px;
+}
+.outcome-events strong {
+  display: block;
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #e1d9f9;
+}
+.outcome-events time {
+  display: block;
+  font-size: 11px;
+  color: #b1c0d6;
+  margin-top: 8px;
+  line-height: 1.9;
+}
+@media (max-width: 760px) {
+  .agenda-controls {
+    gap: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .calendar-key {
+    padding-left: 16px;
+  }
+  .checklist-row .goal-copy > strong {
+    font-size: 13px;
+  }
+  .result-actions {
+    flex-direction: column;
+  }
+  .weekly-progress {
+    margin-left: 17px;
+    margin-right: 17px;
+  }
+}
